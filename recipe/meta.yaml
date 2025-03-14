@@ -1,4 +1,4 @@
-{% set version = '1.0.3' %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/idefix_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/idefix/idefix_{{ version }}.tar.gz
-  sha256: da6be80883091f0b82b41e95fb7afbda760d9fbc1c988cfa2a327e87c1cb124b
+  sha256: 16e01082b16bdeb26e79708b1e3ffb72110d325673da52039f6fd69e0f748520
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -72,10 +72,8 @@ test:
 about:
   home: https://github.com/traets/idefix
   license: GPL-3.0-only
-  summary: Generates efficient designs for discrete choice experiments based on the multinomial
-    logit model, and individually adapted designs for the mixed multinomial logit model.
-    The generated designs can be presented on screen and choice data can be gathered
-    using a shiny application. Traets F, Sanchez G, and Vandebroek M (2020) <doi:10.18637/jss.v096.i03>.
+  summary: Generates efficient designs for discrete choice experiments based on the multinomial logit model, and individually adapted designs for the mixed multinomial logit model. The generated designs can be presented on screen and choice data can be gathered using a shiny application. Traets F, Sanchez G, and Vandebroek
+    M (2020) <doi:10.18637/jss.v096.i03>.
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
