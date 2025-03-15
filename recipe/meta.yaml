@@ -45,6 +45,8 @@ requirements:
     - r-dplyr
     - r-scales
     - r-shiny
+    - r-shinyjs
+    - r-tablehtml
     - r-tmvtnorm
     # for compatibility with r-rcpparmadillo
     - llvm-openmp  # [osx]
@@ -53,7 +55,6 @@ requirements:
     - liblapack
   run:
     - libgomp      # [win]
-    - r-base
     - r-mass
     - r-rcpp >=0.12.18
     - r-rcpparmadillo
@@ -62,6 +63,8 @@ requirements:
     - r-dplyr
     - r-scales
     - r-shiny
+    - r-shinyjs
+    - r-tablehtml
     - r-tmvtnorm
 
 test:
