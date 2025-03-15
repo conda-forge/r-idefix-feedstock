@@ -55,6 +55,7 @@ requirements:
     - liblapack
   run:
     - libgomp      # [win]
+    - r-base
     - r-mass
     - r-rcpp >=0.12.18
     - r-rcpparmadillo
